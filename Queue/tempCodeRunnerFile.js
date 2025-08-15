@@ -1,0 +1,5 @@
+newQueue.dequeue()
+// newQueue.dequeue()
+// newQueue.dequeue()
+// newQueue.dequeue()
+// newQueue.dequeue()

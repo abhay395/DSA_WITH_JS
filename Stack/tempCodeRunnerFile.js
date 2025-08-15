@@ -1,0 +1,8 @@
+var obj = new MinStack()
+// obj.push(1)
+// obj.push(-2)
+// obj.push(-3)
+// // obj.pop()
+// var param_3 = obj.top()
+// var param_4 = obj.getMin()
+// console.log(obj)
