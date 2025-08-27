@@ -27,7 +27,7 @@ var levelOrder = function (root) {
     let queue = [];
     let result = [];
     queue.push(root);
-    while (queue.lenght != 0) {
+    while (queue.length != 0) {
         let temp = []
         let size = queue.length;
         for (let i = 0; i < size; i++) {

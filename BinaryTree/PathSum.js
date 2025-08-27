@@ -36,28 +36,28 @@ var hasPathSum = function (root, targetSum) {
     // }
     // return false
     let stack = [];
-    stack.push({ node: root, sum: root.value })
+    stack.push([root, root.value])
     while (stack.length > 0) {
-        let { node, sum } = stack.pop();
+        let [node, sum] = stack.pop();
         if (!node.left && !node.right && sum == targetSum) {
             return true
         }
-        if (node.left) stack.push({ node: node.left, sum: sum + node.left.value })
-        if (node.right) stack.push({ node: node.right, sum: sum + node.right.value })
+        if (node.left) stack.push([node.left, sum + node.left.value])
+        if (node.right) stack.push([node.right, sum + node.right.value])
     }
     return false
 };
 
-let root = new Node(1);
-root.left = new Node(2)
-// let root = new Node(5)
-// root.left = new Node(4);
-// root.left.left = new Node(11);
-// root.left.left.left = new Node(7);
-// root.left.left.left = new Node(2);
-// root.right = new Node(8);
-// root.right.left = new Node(13);
-// root.right.left = new Node(4);
-// root.right.left.right = new Node(4);
+// let root = new Node(1);
+// root.left = new Node(2)
+let root = new Node(5)
+root.left = new Node(4);
+root.left.left = new Node(11);
+root.left.left.left = new Node(7);
+root.left.left.left = new Node(2);
+root.right = new Node(8);
+root.right.left = new Node(13);
+root.right.left = new Node(4);
+root.right.left.right = new Node(4);
 
-console.log(hasPathSum(root, 3))
+console.log(hasPathSum(root, 22))
