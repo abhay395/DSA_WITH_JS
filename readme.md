@@ -1,6 +1,3 @@
-Here’s a polished and professional **README** for the repository **DSA\_WITH\_JS** by **abhay395**, based on its structure and content:
-
----
 
 # DSA\_WITH\_JS
 
